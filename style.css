@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+	--blue: #1665da;
+	--grey: #ccc;
+	--dark-grey: #929292;
+	--dark-background: #10202d;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+.small-info {
+	background-color: rgb(225, 250, 225);
+	padding: 5px 15px;
+	color: green;
+	border-radius: 30px;
+	font-size: 13px;
+	margin: 0;
+	display: inline-block;
+}
+h1 {
+	font-size: 4vw;
+}
+
+header {
+	background-color: var(--dark-background);
+	color: white;
+}
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+header nav h1 {
+	font-size: 1.5em;
+}
+header nav h1 span {
+	color: var(--blue);
+}
+header nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+}
+header nav ul li {
+	margin-right: 20px;
+	cursor: pointer;
+}
+header nav ul li:hover {
+	color: var(--grey);
+}
+
+header .presentation {
+	margin-top: 40px;
+	padding-bottom: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+}
+header .presentation h1 {
+	font-weight: 300;
+	max-width: 55%;
+	margin: 0;
+}
+header .presentation p {
+	color: var(--grey);
+}
+header .presentation .buttons {
+	margin-top: 20px;
+}
+header .presentation .buttons button {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-right: 10px;
+	color: white;
+	border-radius: 30px;
+	border: 1px solid white;
+	transition: all 0.5s;
+}
+header .presentation .buttons #first {
+	background-color: var(--blue);
+}
+header .presentation .buttons #second {
+	background-color: inherit;
+}
+header .presentation .buttons #first:hover,
+header .presentation .buttons #second:hover {
+	background-color: white;
+	color: var(--dark-background);
+}
+header .presentation small {
+	margin-top: 20px;
+}
+
+.qualities {
+	margin-top: 50px;
+	padding: 0 10%;
+}
+.qualities .content {
+	display: flex;
+	align-items: center;
+}
+.qualities .content .main-card h1 {
+	margin: 0;
+}
+.qualities .content .card {
+	display: flex;
+	margin-left: 25px;
+}
+.qualities .content .card .left {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.qualities .content .card .left img {
+	width: 40px;
+}
+.qualities .content .card .right p {
+	color: var(--dark-grey);
+	line-height: 25px;
+}
+
+.code {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.code h1 {
+	margin: 0;
+	margin-top: 10px;
+}
+.code p {
+	font-size: 17px;
+	max-width: 60%;
+	color: var(--dark-grey);
+}
+.code img {
+	margin-top: 20px;
+	width: 60%;
+}
+
+.community {
+	margin: 60px;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 10px dashed var(--blue);
+	border-radius: 20px;
+}
+.community h2 {
+	font-size: 30px;
+	margin: 0;
+}
+.community p {
+	font-weight: 300;
+	color: var(--dark-grey);
+}
+.community button {
+	padding: 10px 30px;
+	background-color: var(--blue);
+	color: white;
+	border: 1px solid var(--blue);
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.community button:hover {
+	background-color: white;
+	color: var(--blue);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: var(--dark-background);
+	color: white;
+}
+footer .testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 650px;
+}
+footer .testimonial blockquote cite {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+}
+footer .links {
+	display: flex;
+}
+footer .links p {
+	margin-right: 20px;
+	color: var(--grey);
+	cursor: pointer;
+	border-bottom: 1px solid var(--dark-background);
+}
+footer .links p:hover {
+	color: white;
+	border-bottom-color: white;
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	header .presentation h1 {
+		max-width: 100%;
+	}
+	header .presentation p {
+		font-size: 13px;
+	}
+	header .presentation .buttons button {
+		margin-bottom: 10px;
+	}
+
+	.qualities {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.qualities .content {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.code {
+		margin-top: 40px;
+	}
+
+	.community h2 {
+		font-size: 15px;
+	}
+
+	footer .links {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .links p {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+}
